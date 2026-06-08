@@ -4,54 +4,54 @@ Diese Anleitung richtet sich an die Kunden-IT.
 
 ## Voraussetzungen
 
-- Android-Geraet mit Android 6 oder neuer.
+- Android-Gerät mit Android 6 oder neuer.
 - Netzwerkzugriff auf den FLEET Webservice.
 - Webservice-URL, Benutzername und Passwort oder ein vorbereiteter QR-Code.
-- Optional ADB fuer Installation und Diagnose.
-- Bei Zebra-Geraeten: passendes DataWedge-Profil fuer Barcode-Scans.
+- Optional ADB für Installation und Diagnose.
+- Bei Zebra-Geräten: passendes DataWedge-Profil für Barcode-Scans.
 
 ## Download
 
-1. APK herunterladen: [Fleet_MDE_1.9.5_aedf92d0.apk](https://github.com/harzmann/fleet_mde_doc/releases/download/customer-test-latest/Fleet_MDE_1.9.5_aedf92d0.apk)
-2. Optional Pruefsumme herunterladen: [Fleet_MDE_1.9.5_aedf92d0.apk.sha256](https://github.com/harzmann/fleet_mde_doc/releases/download/customer-test-latest/Fleet_MDE_1.9.5_aedf92d0.apk.sha256)
+1. APK herunterladen: [Fleet_MDE_1.9.5b1_fbfd0cb4.apk](https://github.com/harzmann/fleet_mde_doc/releases/download/customer-test-latest/Fleet_MDE_1.9.5b1_fbfd0cb4.apk)
+2. Optional Prüfsumme herunterladen: [Fleet_MDE_1.9.5b1_fbfd0cb4.apk.sha256](https://github.com/harzmann/fleet_mde_doc/releases/download/customer-test-latest/Fleet_MDE_1.9.5b1_fbfd0cb4.apk.sha256)
 3. SHA256 vergleichen:
 
 `powershell
-Get-FileHash -Algorithm SHA256 ".\Fleet_MDE_1.9.5_aedf92d0.apk"
+Get-FileHash -Algorithm SHA256 ".\Fleet_MDE_1.9.5b1_fbfd0cb4.apk"
 `
 
 Erwartete SHA256:
 
 `	ext
-6c18d2bc16c2c7f832a62cefbff5282c7f7b2429927084f5b71221649a7a6787
+c9d37c6980c6e4d2dff6131586e091c28c00a3b07899ab1584474e888796455e
 `
 
 ## Manuelle Installation
 
 1. Vorhandene App-Version und aktuelle Einstellungen dokumentieren.
-2. APK auf das Android-Geraet kopieren.
-3. Installation aus unbekannten Quellen fuer die verwendete Datei-App, den Browser oder das MDM erlauben.
-4. APK oeffnen und Installation bestaetigen.
+2. APK auf das Android-Gerät kopieren.
+3. Installation aus unbekannten Quellen für die verwendete Datei-App, den Browser oder das MDM erlauben.
+4. APK öffnen und Installation bestätigen.
 5. App starten und angeforderte Berechtigungen erlauben.
-6. Einstellungen oeffnen und Webservice-Zugangsdaten manuell oder per QR-Code setzen.
-7. App neu starten und Funktionstest durchfuehren.
+6. Einstellungen öffnen und Webservice-Zugangsdaten manuell oder per QR-Code setzen.
+7. App neu starten und Funktionstest durchführen.
 
 ## Installation per ADB
 
 `powershell
 adb devices
-adb install -r "Fleet_MDE_1.9.5_aedf92d0.apk"
+adb install -r "Fleet_MDE_1.9.5b1_fbfd0cb4.apk"
 `
 
 ## Funktionstest
 
-- App-Version in den Einstellungen pruefen.
+- App-Version in den Einstellungen prüfen.
 - Anmeldung testen.
 - Webservice-Verbindung testen.
 - Werkstattauftrag anlegen oder bearbeiten.
 - Zeiterfassung mit direkter WA-Nr., Barcode-Scan und Auswahlliste testen.
-- Scanner-/Kamera-Berechtigung pruefen.
-- Fehlerfall ohne Netzwerk oder mit falschen Zugangsdaten pruefen.
+- Scanner-/Kamera-Berechtigung prüfen.
+- Fehlerfall ohne Netzwerk oder mit falschen Zugangsdaten prüfen.
 
 ## Rollback
 

@@ -6,13 +6,13 @@ Das PlayStore Deployment erfolgt bewusst nicht automatisch bei einem Commit oder
 
 1. Im privaten Repo den GitHub Actions Workflow playstore-release.yml manuell starten.
 2. Release-Name, Track und Rollout-Prozentwert eingeben.
-3. Workflow pruefen und Play Console oeffnen.
+3. Workflow prüfen und Play Console öffnen.
 4. Review-Status, Crashs und ANRs kontrollieren.
-5. Rollout manuell erhoehen, wenn keine Blocker auftreten.
+5. Rollout manuell erhöhen, wenn keine Blocker auftreten.
 
 ## Wichtig
 
 - Normale Pushes erzeugen nur die Kunden-Testversion.
-- PlayStore Uploads werden ausschliesslich ueber workflow_dispatch gestartet.
-- Vor dem Upload muss der ersionCode hoeher sein als der aktuelle PlayStore-Stand.
+- PlayStore Uploads werden ausschließlich über workflow_dispatch gestartet.
+- Vor dem Upload muss der versionCode höher sein als der aktuelle PlayStore-Stand.
 

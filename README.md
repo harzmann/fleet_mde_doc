@@ -1,8 +1,8 @@
 # FLEET MDE Kundenportal
 
-Dieses Repo enthaelt die oeffentliche Kundendokumentation fuer FLEET MDE.
+Dieses Repo enthält die öffentliche Kundendokumentation für FLEET MDE.
 
-Die Dokumentation wird mit MkDocs gebaut und ueber GitHub Pages veroeffentlicht:
+Die Dokumentation wird mit MkDocs gebaut und über GitHub Pages veröffentlicht:
 
 https://harzmann.github.io/fleet_mde_doc/
 
