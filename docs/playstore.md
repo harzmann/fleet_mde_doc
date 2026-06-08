@@ -1,4 +1,4 @@
-﻿# PlayStore Deployment
+# PlayStore Deployment
 
 Das PlayStore Deployment erfolgt bewusst nicht automatisch bei einem Commit oder Push.
 

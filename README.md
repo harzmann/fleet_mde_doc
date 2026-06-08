@@ -1,4 +1,4 @@
-﻿# FLEET MDE Kundenportal
+# FLEET MDE Kundenportal
 
 Dieses Repo enthaelt die oeffentliche Kundendokumentation fuer FLEET MDE.
 

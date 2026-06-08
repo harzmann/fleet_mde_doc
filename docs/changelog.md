@@ -1,7 +1,7 @@
-﻿# Aenderungen
+# Aenderungen
 
 Build: $VersionName ($VersionCode)  
-Commit: [377b848204ce7f531e07c70ecdd5fe0231de95dc](https://github.com/harzmann/fleet_mde/commit/377b848204ce7f531e07c70ecdd5fe0231de95dc)  
+Commit: [aedf92d03470400d7e2be4a6935105e695327fe1](https://github.com/harzmann/fleet_mde/commit/aedf92d03470400d7e2be4a6935105e695327fe1)  
 Build-Zeitpunkt: $BuildTimeUtc
 
 # ChangeLog
