@@ -12,8 +12,6 @@ nav:
   - Start: index.md
   - Installation: installation.md
   - Änderungen: changelog.md
-  - Prüfsummen: checksums.md
-  - PlayStore Deployment: playstore.md
 copyright: Copyright eh-systemhaus 2026
 markdown_extensions:
   - admonition

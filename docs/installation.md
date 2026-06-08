@@ -12,18 +12,18 @@ Diese Anleitung richtet sich an die Kunden-IT.
 
 ## Download
 
-1. APK herunterladen: [Fleet_MDE_1.9.5b1_fbfd0cb4.apk](https://github.com/harzmann/fleet_mde_doc/releases/download/customer-test-latest/Fleet_MDE_1.9.5b1_fbfd0cb4.apk)
-2. Optional Prüfsumme herunterladen: [Fleet_MDE_1.9.5b1_fbfd0cb4.apk.sha256](https://github.com/harzmann/fleet_mde_doc/releases/download/customer-test-latest/Fleet_MDE_1.9.5b1_fbfd0cb4.apk.sha256)
+1. APK herunterladen: [Fleet_MDE_1.9.5b1_d9295133.apk](https://github.com/harzmann/fleet_mde_doc/releases/download/customer-test-latest/Fleet_MDE_1.9.5b1_d9295133.apk)
+2. Optional Prüfsumme herunterladen: [Fleet_MDE_1.9.5b1_d9295133.apk.sha256](https://github.com/harzmann/fleet_mde_doc/releases/download/customer-test-latest/Fleet_MDE_1.9.5b1_d9295133.apk.sha256)
 3. SHA256 vergleichen:
 
 `powershell
-Get-FileHash -Algorithm SHA256 ".\Fleet_MDE_1.9.5b1_fbfd0cb4.apk"
+Get-FileHash -Algorithm SHA256 ".\Fleet_MDE_1.9.5b1_d9295133.apk"
 `
 
 Erwartete SHA256:
 
 `	ext
-c9d37c6980c6e4d2dff6131586e091c28c00a3b07899ab1584474e888796455e
+45265f6a6c5a9ff3efa70e840739413ea50995d4cd0adfe489fda02ddf007b03
 `
 
 ## Manuelle Installation
@@ -40,7 +40,7 @@ c9d37c6980c6e4d2dff6131586e091c28c00a3b07899ab1584474e888796455e
 
 `powershell
 adb devices
-adb install -r "Fleet_MDE_1.9.5b1_fbfd0cb4.apk"
+adb install -r "Fleet_MDE_1.9.5b1_d9295133.apk"
 `
 
 ## Funktionstest
