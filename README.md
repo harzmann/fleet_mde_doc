@@ -6,5 +6,5 @@ Die Dokumentation wird mit MkDocs gebaut und ueber GitHub Pages veroeffentlicht:
 
 https://harzmann.github.io/fleet_mde_doc/
 
-Die aktuelle Test-APK liegt im Release $ReleaseTag.
+Die aktuelle Test-APK liegt im Release customer-test-latest.
 
