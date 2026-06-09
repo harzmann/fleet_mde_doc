@@ -11,10 +11,12 @@ theme:
 nav:
   - Start: index.md
   - Installation: installation.md
+  - Einrichtung: einrichtung.md
   - Änderungen: changelog.md
 copyright: Copyright eh-systemhaus 2026
 markdown_extensions:
   - admonition
+  - pymdownx.details
   - toc:
       permalink: true
 
