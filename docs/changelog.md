@@ -1,10 +1,32 @@
 # Änderungen
 
-Build: 1.9.5b1 (18)<br>
-Commit: [d92951332852bd641901a3097a639b28c516cc9d](https://github.com/harzmann/fleet_mde/commit/d92951332852bd641901a3097a639b28c516cc9d)<br>
-Build-Zeitpunkt: 2026-06-08T09:39:48Z
+Build: 1.9.5b2 (19)<br>
+Commit: [22dd0cb519d0ca126bbf93476f0ee414f75f7c8c](https://github.com/harzmann/fleet_mde/commit/22dd0cb519d0ca126bbf93476f0ee414f75f7c8c)<br>
+Build-Zeitpunkt: 2026-06-10T12:00:26Z
 
 # ChangeLog
+
+## 2026-06-10 - 1.9.5b2
+
+### Lagerzugang Einkauf
+- Der Lagerzugang ist ueber das Hauptmenue wieder aktiv aufrufbar und verwendet den gleichen aktiven Button-Stil wie die uebrigen Hauptfunktionen.
+- Die Lieferantenauswahl wurde auf ein kombiniertes Such- und Dropdown-Feld umgestellt.
+- Lieferanten koennen nach Lieferanten-Nr., KreditorNr. und Lieferantenname gesucht und ueber eine Auswahlliste ausgewaehlt werden.
+- Lieferanten-Barcodes werden gegen die geladene Lieferantenliste aufgeloest.
+- Lagerzugaenge werden ueber `CreateReceiptPosition` gebucht; die zuletzt erfolgreich gebuchte Position kann ueber `DeleteReceiptPosition` geloescht werden.
+- Der Statusbereich zeigt nach Buchung oder Loeschung den letzten Vorgang der aktuellen Sitzung an.
+
+### Bedienung und Layout
+- Die Lagerzugang-Maske wurde an die Artikelerfassung im Werkstattauftrag angeglichen.
+- Artikel-ID, Artikel-Matchcode, Lieferant, Menge, E-Preis und die Aktionsbuttons wurden in Ausrichtung und Bedienlogik vereinheitlicht.
+- Die separate Artikel-ID-Lupe wurde in Lagerzugang und Werkstattauftrag entfernt; Suche per Enter und Barcode bleibt erhalten.
+- Fuer Lieferanten wurde eine eigene Lupen-Schaltflaeche mit gefilterter Auswahlliste ergaenzt.
+
+### Webservice
+- `DeleteReceiptPosition` wurde im Webservice-Wrapper ergaenzt.
+
+### Pruefung
+- Der Debug-Build wurde mit `.\gradlew.bat assembleDebug` erfolgreich geprueft.
 
 ## 2026-05-20
 
