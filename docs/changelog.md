@@ -1,10 +1,23 @@
 # Änderungen
 
-Build: 1.9.5b2 (19)<br>
-Commit: [22dd0cb519d0ca126bbf93476f0ee414f75f7c8c](https://github.com/harzmann/fleet_mde/commit/22dd0cb519d0ca126bbf93476f0ee414f75f7c8c)<br>
-Build-Zeitpunkt: 2026-06-10T12:00:26Z
+Build: 1.9.5b3 (20)<br>
+Commit: [1d0d1c0b33cf40da02572a9ea94b476ba6a38e31](https://github.com/harzmann/fleet_mde/commit/1d0d1c0b33cf40da02572a9ea94b476ba6a38e31)<br>
+Build-Zeitpunkt: 2026-06-11T10:17:21Z
 
 # ChangeLog
+
+## 2026-06-11 - 1.9.5b3
+
+### Lagerbestand
+- Der Menuepunkt `Lagerbestand` ist im Hauptmenue wieder aktiv und oeffnet eine eigene read-only Lagerbestandsuebersicht.
+- Lagerbestaende werden ueber die vorhandenen Webservice-Daten geladen und nach Artikel ID, Artikel Matchcode/Bezeichnung sowie Lagerstelle gefiltert.
+- Artikel ID und Artikel Matchcode verwenden die gleiche Anordnung mit Barcode-Schaltflaechen wie im Lagerzugang.
+- Die Artikel-ID-Eingabe oeffnet eine numerische Tastatur.
+- Die Artikel-Matchcode-Lupe oeffnet die Artikelauswahl analog zum Lagerzugang und uebernimmt den ausgewaehlten Artikel in die Filter.
+- Die Ergebnisliste aktualisiert sich direkt waehrend der Eingabe; `Neu laden` setzt die Eingaben zurueck und laedt die Daten neu.
+
+### Pruefung
+- Der Debug-Build wurde mit `.\gradlew.bat :app:assembleDebug` erfolgreich geprueft.
 
 ## 2026-06-10 - 1.9.5b2
 
