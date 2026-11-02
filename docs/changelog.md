@@ -1,10 +1,25 @@
 # Änderungen
 
-Build: 1.9.5b3 (20)<br>
-Commit: [1d0d1c0b33cf40da02572a9ea94b476ba6a38e31](https://github.com/harzmann/fleet_mde/commit/1d0d1c0b33cf40da02572a9ea94b476ba6a38e31)<br>
-Build-Zeitpunkt: 2026-06-11T10:17:21Z
+Build: 1.9.5b4 (21)<br>
+Commit: [9bce791b6a08a523815709d3d9110530d3ec11ba](https://github.com/harzmann/fleet_mde/commit/9bce791b6a08a523815709d3d9110530d3ec11ba)<br>
+Build-Zeitpunkt: 2026-11-02T10:04:05Z
 
 # ChangeLog
+
+## 2026-11-02 - 1.9.5b4
+
+### Werkstattauftraege
+- Der Fahrzeugfilter fuer offene Werkstattauftraege fasst Auftraege derselben KFZ-Nr. nun zu einem Suchbegriff zusammen.
+- Statusmeldungen in den Auftragslisten zeigen Umlaute korrekt an.
+- Bei der Neuanlage eines Werkstattauftrags wird KundenNr im Webservice-Aufruf mit 0 uebergeben.
+- Beim Bearbeiten eines Werkstattauftrags wird KundenNr im Webservice-Aufruf mit 0 uebergeben, sofern KFZNr groesser 0 ist.
+- Beim Bearbeiten eines Werkstattauftrags wird KFZNr im Webservice-Aufruf mit 0 uebergeben, sofern KundenNr groesser 0 ist.
+- Die App sendet fuer die ueberarbeiteten Webservice-Funktionen weiterhin 0 fuer ungenutzte Referenzen; der Webservice schreibt daraus Datenbank-NULL. Bei UpdateOrder gewinnt KFZNr, falls KFZNr und KundenNr beide groesser 0 sind.
+- Beim Laden offener Werkstattauftraege werden KFZNr und KundenNr zusaetzlich ueber ihre Webservice-Property-Namen auf die erwarteten App-Indizes gelegt, damit Kundenauftraege beim Bearbeiten ihre KundenNr behalten.
+- Beim Bearbeiten von Kundenauftraegen verwendet die App ausschliesslich WAKundenNr fuer den UpdateOrder-Kundenbezug.
+
+### Pruefung
+- Debug- und Release-Build mit `.\gradlew.bat :app:assembleDebug :app:assembleRelease` erfolgreich geprueft. Zehn gezielte Pruefungen der Fahrzeug-/Kundenreferenzen bestanden. Die signierte Kunden-APK wird ueber den bestehenden GitHub-Workflow veroeffentlicht.
 
 ## 2026-06-11 - 1.9.5b3
 
