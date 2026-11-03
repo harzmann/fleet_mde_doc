@@ -18,3 +18,9 @@ markdown_extensions:
   - toc:
       permalink: true
 
+
+extra_css:
+  - stylesheets/image-lightbox.css
+
+extra_javascript:
+  - javascripts/image-lightbox.js
